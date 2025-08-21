@@ -4,7 +4,6 @@ This repository is my personal lab notebook - where I record everything I experi
 It’s not meant to be perfectly organized by concept; instead, it follows my journey step by step - day by day, week by week.  
 
 This is where I track progress, failures, successes, and future plans.  
-Commits will always be not too long ago, since I keep editing, deleting, cloning, renaming, re-structuring the repos. 
 
 ---
 
@@ -51,3 +50,5 @@ The structure is simple for a Personal Lab
 
 This repo is personal and raw — like a working diary than a polished documentation   
 This is not meant to be used in any way for actual production or as an official source for technical learning  
+
+Commits will always be not too long ago, since I keep editing, deleting, cloning, renaming, re-structuring the repos. 
