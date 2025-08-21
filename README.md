@@ -49,11 +49,9 @@ Files:
 
 ---
 
-## Planned Projects
-- Implement socket programming in C++  
-- Explore HTTPS vs HTTP vulnerabilities  
+## Planned Projects 
+- Explore HTTP vs HTTPS vulnerabilities (Setup HTTPS server) 
 - Add Cisco IOS/NX-OS device emulation in GNS3  
 - Experiment with multi-VM networking (guest-to-guest communication via virtual switches, with host acting only as a bridge)  
-- More automation with scripts (bash, Python)  
 
 ---
