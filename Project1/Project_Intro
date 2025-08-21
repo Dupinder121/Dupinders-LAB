@@ -1,0 +1,9 @@
+Setting up a Minimal Web-server on a Virtual Network
+
+I have used a Vmware VM (minimal Arch installation with python installed) which uses three different modes of networking i.e Host-only, NAT & Bridged (haven't covered bridged yet since it requires port forwarding)
+I set a python http.server on port 8000 on the guest, then accessed it through it's virtual NIC's IP on my host OS by
+- pinging it
+- using curl to fetch the webpage html code
+- opening the index.html in my host web browser
+I am planning to add Cisco IOS by GNS3 to it in the future, cover bridged network mode, try to run bash scripts using curl, do socket programming on it in C++, and also covering the vulnerabilities of http over https, and also make it guest-guest too if needed.
+

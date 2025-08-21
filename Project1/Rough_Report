@@ -1,0 +1,33 @@
+Setting Up a Minimal Web Server in a Virtualized Network Using Python and Arch Linux
+INTRODUCTION
+This project showcases a home lab setup with a virtual machine acting as an http web server and the host OS which acts as the client to access the web page hosted.
+________________________________________
+Specifications of the Virtual Lab
+Given below is the brief information of the virtual home lab:
+•	Host OS – Linux Mint (Ubuntu Based)
+•	Guest OS – Arch Linux
+•	Hypervisor used – VMware Workstation Pro
+________________________________________
+A brief detail of each component of the Lab
+•	Guest OS – A minimal installation of Arch Linux (TTY Shell) with python installed on it.
+•	Network Connection Mode – This lab covers two connection modes within VMware Workstation Pro:
+o	Host-only connection: Guest to Host & Vice Versa communication
+o	NAT connection: Used to share the HOST’s IP with the virtual guest but the IP addresses of both the host and the guest within the LAN that is established on the Host OS stay different.
+o	Bridged Networking: Is available, not used for this setup.
+•	HTTP Server – The http service is served on the Virtual Guest (Arch Linux) by using a python library called http.server on port 8000.
+•	Web Browser – On the host to access the http server, which can be accessed by typing the virtual ethernet controller IP address of the guest into the address bar followed by a colon and the port number on which http is being served.
+________________________________________
+Given below is the detailed procedure followed by me to create this setup
+1.	Installed VMware Workstation on Linux Mint, used .bundle file to install, involved commands are:
+2.	sudo chmod +X <vmware.bundle file>   # For Read/Write permissions
+3.	./<vmware.bundle>                   # To install VMware Workstation
+4.	Installed Arch Linux on VMware Workstation – The whole process will be included in a separate report dedicated to Linux Learning.
+5.	Created an index.html file in the following path:
+6.	/home/web
+7.	Changed directory to the directory mentioned above.
+8.	Used the following command to start an http server on localhost of guest VM on port 8000.
+9.	Used the command ip a to fetch the network information of the guest machine.
+10.	Used the address under eth33 device interface to communicate between both the machines.
+________________________________________
+I have used ping, curl, and a web browser to make sure that the connection is established between both the machines.
+

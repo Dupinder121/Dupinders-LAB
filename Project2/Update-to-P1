@@ -1,0 +1,28 @@
+Used Bridged networking to show VM with http setup as a separate device on the college LAN, accessed the webpage on <guest ip>:8000 (port 8000), then tried SSH into in (didn’t work) 
+I have added GNS3 for now to the previous setup (Project1) , ssh into GNS3 VM, tried to SSH into it using college PC (Windows, standard account, didn’t succeed) 
+
+SSH worked  On host OS terminal, under root account with usage of correct ip and password 
+-	ssh gns3@<ip address>  (SYNTAX TO REMEMBER) 
+SSH Failed  On host OS, under standard account (Windows) 
+SSH Failed  port 22 returned “permission denied”
+REASON : 
+-	port 22 not open, ssh server not initialized 
+
+SOMETHING NEW I LEARNT : openssh on linux  
+-	systemctl ssh.socket 
+-	OR sshd.socket 
+-	OR openssh 
+
+TO REMEMBER : software differ on pacman & apt as well as service or socket names 
+
+WHAT I LEARNT UNDER VIRTUALIZATION 
+-	How to clone VMs completely, cloning and storing it separately 
+-	To clone VMs, run different instances, but is stored as single file, just with slightly increased size (due to snapshot data being stored in the same directory) 
+
+Actual term for this: Linked clones (is applicable for VMware/VirtualBox/Cloud VMs; AWS, Azure etc.) 
+
+To work on next, make the Cisco 7000 series switch work virtually 
+Cisco switches work on NX-OS (Nexus OS) (proprietary, available under educational license) 
+
+Storing all of this on Github now, learning as I document for revision. 
+
