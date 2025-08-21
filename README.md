@@ -1,7 +1,7 @@
 # NETWORKING  
 
-This repository is my personal networking playground — a space to explore, practice, and document networking concepts, protocols, and hands-on experiments.  
-It is intended solely for educational use and self-learning, not for production deployment.  
+This repository is my personal networking space for documentation on projects, hands-on implementation, and theoretical concepts.  
+It is intended only for educational and documentation purposes, not for production environments.  
 
 ---
 
@@ -38,7 +38,7 @@ Files:
 
 ---
 
-## Topics Covered So Far
+## Theoretical Topics Covered So Far
 - Virtualization basics with VMware  
 - Networking modes: Host-only, NAT, Bridged  
 - HTTP fundamentals with Python `http.server`  
@@ -49,7 +49,7 @@ Files:
 
 ---
 
-## Future Work
+## Planned Projects
 - Implement socket programming in C++  
 - Explore HTTPS vs HTTP vulnerabilities  
 - Add Cisco IOS/NX-OS device emulation in GNS3  
@@ -57,7 +57,3 @@ Files:
 - More automation with scripts (bash, Python)  
 
 ---
-
-## Disclaimer  
-This repository is private and intended for personal educational use only.  
-The experiments documented here are not designed for production environments or public distribution.  
