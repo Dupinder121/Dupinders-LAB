@@ -1,0 +1,33 @@
+## For SWAPFILE 
+
+
+swapon --show 
+sudo fallocate -l 10G /swapfile 
+sudo chmod 600 /swapfile 
+sudo mkswap /swapfile 
+sudo swapon /swapfile 
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+sudo swapon --show 
+free -h 
+
+
+
+
+## For SWAP PARTITION 
+
+# Optional: Check if the partition is marked as swap
+sudo blkid /dev/nvme0n1p8
+
+# Optional: Format the partition as swap (ONLY if it's not already)
+# WARNING: This will erase all data on that partition
+sudo mkswap /dev/nvme0n1p8
+
+# Enable the swap partition
+sudo swapon /dev/nvme0n1p8
+
+# Add to /etc/fstab to make it permanent
+echo '/dev/nvme0n1p8 none swap sw 0 0' | sudo tee -a /etc/fstab
+
+# Verify that swap is active
+sudo swapon --show
+free -h

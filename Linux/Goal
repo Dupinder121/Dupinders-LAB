@@ -1,0 +1,9 @@
+7-Day Linux Skill Challenge
+Day	Task	Goal
+1	Use chmod, chown, and umask on a test file	Understand Linux permissions deeply
+2	Write a basic shell script to back up a folder to /home/username/backups/	Learn scripting and cp, mkdir, date
+3	Install a service (e.g., nginx or ssh), use systemctl to start/stop/enable it	Get hands-on with systemd
+4	Use cron to schedule a script that logs the time every 5 minutes	Get into automation
+5	Use grep, awk, and sed on a log file (try /var/log/syslog or /journal)	Learn powerful text processing
+6	Explore /etc/fstab and try mounting/unmounting a USB manually	Deepen understanding of mounts and /etc
+7	Create a custom GRUB menu entry to boot a different kernel or ISO	Apply GRUB knowledge meaningfully

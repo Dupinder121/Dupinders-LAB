@@ -1,0 +1,34 @@
+//add repositories to latest Red hat backed distros 
+//filetype = .repo (extension) 
+sudo dnf config-manager addrepo --from-repofile=<URL> 
+
+
+//QEMU INSTALLATION
+//Install all virtualization related software on dnf-distro 
+//@virtualization: This installs QEMU, KVM, virt-manager (GUI), and related tools.
+                 * qemu-kvm 
+                 * virt-install/virtinst 
+                 * virt-manager 
+                 * libvirt 
+                 * bridge-utils
+                 * libvirt-client 
+//libvirtd: libvirt daemon manages virtualization.
+//virtqemud: alternative to libvert 
+virtstoraged: used to manager volume pools 
+//usermod -aG libvirt $(whoami): Add current user to libvirt group so root previlliges are not required 
+//systemctl enable --now libvirtd: Starts libvirt service now and enable on boot. 
+
+sudo dnf install @virtualization 
+sudo systemctl enable --now libvertd X | sudo systemctl enable --now libvirtd.socket X | sudo systemctl enable --now virtqemud.socket 
+sudo systemctl start virtstoraged.socket 
+sudo usermod -aG libvirt $(whoami) 
+
+TLDR; Order of Layers of Virtualization in Linux (this particular setup) 
+
+1. The kernel (KVM Modules) 
+2. Qemu (don't emulate, use virtual hardware by KVM) 
+3. libvirt (API to talk to Qemu) 
+4. Tools to use libvirt (virsh, libvirt-clients) 
+5. virt-manager for GUI tools 
+
+Note: Higher the layer number, the closer it is to the user. 

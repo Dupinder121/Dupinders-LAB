@@ -1,0 +1,24 @@
+
+COMMAND                        FUNCTIONALITY 
+
+lsmod                          show loaded kernel modules 
+
+lspci                          show pci devices on system 
+
+lsusb                          to list all usb devices on system 
+
+dmesg                          show kernel messages from boot process onward 
+
+lscpu                          show cpu architecture and other info 
+
+lsblk                          list block devices 
+
+df -h                          show disks and used space in each 
+
+free -h                        display RAM and Swap usage 
+
+inxi                           //learn 
+
+hwinfo                         detailed hardware info 
+
+journalctl                     data from previous boots 

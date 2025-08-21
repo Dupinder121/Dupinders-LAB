@@ -1,0 +1,14 @@
+
+set root=(hd0,gpt2) >> use ls (hd0,gpt2) to check if it has the required files 
+
+linux /boot/vmlinuz root/dev/nvme rw >> specify the root or boot partition including these files 
+
+initrd /boot/initiramfs.img >> use the .img file, could be a different one than this
+
+boot 
+
+
+sudo efibootmgr --create --disk /dev/sdX --part Y --label "Boot_name" --loader '\EFI\parrot\grubx64.efi'
+
+Y - partition number 
+/dev/sdX - the whole drive. For example: 'dev/nvem0n1' 
