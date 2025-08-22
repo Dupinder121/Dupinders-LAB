@@ -5,7 +5,7 @@ It is a curated collection aimed at building strong foundations in Linux adminis
 
 ---
 
-## 📂 Contents
+## Contents
 - **Basics/**  
   Introductory material covering Linux fundamentals such as file structure, permissions, and commands.
 
@@ -23,20 +23,20 @@ It is a curated collection aimed at building strong foundations in Linux adminis
 
 ---
 
-## 🛠️ How to Use
+## How to Use
 1. Browse through the subdirectories for topic-specific notes.  
 2. Use the examples and scripts to practice in your own Linux environment.  
 3. Contributions and improvements are welcome!  
 
 ---
 
-## 🎯 Goals
+## Goals
 - Build a structured knowledge base for Linux.  
 - Provide hands-on, example-driven learning.  
 - Serve as a quick reference for daily Linux tasks.  
 
 ---
 
-## 📌 Notes
+## Notes
 - Content is regularly updated as learning progresses.  
 - This is a living resource—feedback and collaboration are encouraged.  
