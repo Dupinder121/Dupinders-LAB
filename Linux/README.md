@@ -1,4 +1,4 @@
-# Linux Guide
+# Linux
 
 This directory contains notes, references, and hands-on guides for learning and working with Linux.  
 It is a curated collection aimed at building strong foundations in Linux administration, system internals, and practical usage for both beginners and intermediate learners.
