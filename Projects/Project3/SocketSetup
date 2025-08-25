@@ -1,0 +1,28 @@
+Socket - ENDPOINT for NETWORK COMMUNICATION, TWO PROCESSES ARE CREATED either on same machine or on two different machines for establishing communication 
+
+PROCESSES ARE: Client & Server 
+
+Server - Creates a Socket, binds it to a port, listens for request, establishes a connection when a request request is received
+
+Client - Creates a socket to connect to the SERVER's IP >> Port at which the server is listening 
+
+Communication happens over TCP or UDP protocol 
+
+
+POSIX Socket API : These are functions written in C, usable in C & C++ 
+                
+                    Available in -- <sys/socket.h> and <arpa/inet.h> 
+
+Core functions 
+
+Server Only :  bind() --> binds the socket to a port 
+               listen() --> opens the port and listens on it 
+               accept() --> accept the request received through client 
+
+Client Only : connect()
+
+Other: socket()        -->  creates a socket 
+       send() / recv() -->  exchange data 
+       close()         -->  release the socket 
+
+<<<<<I'll apply the given server side and client side code to my previously used setup to check if connection is established or not>>>>> 
