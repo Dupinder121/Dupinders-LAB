@@ -1,0 +1,13 @@
+TTY Fonts 
+
+
+install : 
+sudo pacman -S terminus-font 
+
+stored in : 
+/usr/share/kbd/ consolefonts | grep -i ter-1
+
+change in : 
+/etc/vconsole.conf 
+
+reboot to apply changes 
