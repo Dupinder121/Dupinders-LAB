@@ -26,3 +26,17 @@ Other: socket()        -->  creates a socket
        close()         -->  release the socket 
 
 <<<<<I'll apply the given server side and client side code to my previously used setup to check if connection is established or not>>>>> 
+
+
+
+Additional : 
+
+OSI & TCP/IP models → I get because of my TCP/IP socket to socket communication project 
+
+Switching (Layer 2): VLANs, trunking, STP → far above sockets.
+
+Routing (Layer 3): static routes, RIP, OSPF, EIGRP → packet movement between networks.
+
+WAN & Security basics: NAT, ACLs, VPNs.
+
+Device setup: CLI config on routers/switches.
