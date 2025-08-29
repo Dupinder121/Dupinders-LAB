@@ -1,0 +1,16 @@
+
+For Distros using "systemd-networkd" service controlled by systemctl 
+
+sudo nano /etc/systemd/network/20-static.network
+
+add the following text : 
+<<
+[Match] 
+name=<interface_name> // can be ens33 or wlps4 depending upon the interface you want to change the IP of 
+
+[Network] 
+Address=192.168.1.1 >> 
+
+Save and run the following command 
+
+ip addr show ens33 // To find the ip of the desired interface 
